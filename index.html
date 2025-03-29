@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Courses Zone is a big educational platform to teach many fields which the future is built, such as: Programming, Graphic, English, Ai, Computer Basics, and others!">
+
+    <title>منصة كورسيزون | مصر</title>
+
+    <!-- ====== Favicon Link ====== -->
+    <link rel="shortcut icon" href="./assets/Images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+        </div>
+        <div class="loader-text" data-translate="loading">جاري تحميل المنصة...</div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content" style="display: none;">
+        <!-- Header -->
+        <header>
+            <nav class="navbar container">
+                <div class="logo">
+                    <img src="./assets/Images/logo.png" alt="Logo">
+                </div>
+
+                <button class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#" class="active" data-translate="home">الرئيسية</a></li>
+                    <li><a href="#" data-translate="why">لماذا نحن</a></li>
+                    <li><a href="#" data-translate="courses">الكورسات</a></li>
+                    <li><a href="#" data-translate="certificates">الشهادات</a></li>
+                    <li><a href="#" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="action-btn theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="action-btn language-toggle">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <div class="action-btn cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                        <div class="cart-dropdown">
+                            <div class="cart-items">
+                                <div class="empty-cart" data-translate="empty_cart">سلة التسوق فارغة</div>
+                            </div>
+                            <div class="cart-total">
+                                <span data-translate="total">المجموع:</span>
+                                <span class="total-price">0</span> <span data-translate="currency">ج.م</span>
+                            </div>
+                            <button class="checkout-btn" data-translate="checkout" name="checkout">إتمام الشراء</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-up">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h1 data-translate="hero_title">طور مهاراتك مع أفضل الكورسات التعليمية</h1>
+                    <p data-translate="hero_subtitle">انضم إلى آلاف الطلاب الذين طوروا مسيرتهم المهنية من خلال منصتنا
+                        التعليمية المتكاملة</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" data-translate="start_learning" name="start_learning">ابدأ التعلم الآن</button>
+                        <button class="btn btn-outline" data-translate="browse_courses" name="browse_courses">تصفح الكورسات</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/Images/main.png" alt="Hero Image" data-aos="fade-left">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2 data-translate="why_title">لماذا تختار <span class="highlight">كورسيزون؟</span></h2>
+                    <p data-translate="why_subtitle">نقدم لك تجربة تعليمية فريدة تلبي جميع احتياجاتك التعليمية والمهنية
+                    </p>
+                </div>
+
+                <div class="features-container">
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 data-translate="feature1_title">مدربون خبراء</h3>
+                        <p data-translate="feature1_desc">تعلم من أفضل المدربين المعتمدين ذوي الخبرة الواسعة في مجالاتهم
+                        </p>
+                    </div>
+
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 data-translate="feature2_title">شهادات معتمدة</h3>
+                        <p data-translate="feature2_desc">احصل على شهادات معتمدة يمكنك إضافتها لسيرتك الذاتية</p>
+                    </div>
+
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 data-translate="feature3_title">تعلم عملي</h3>
+                        <p data-translate="feature3_desc">تدريبات عملية ومشاريع حقيقية لتطبيق ما تتعلمه مباشرة</p>
+                    </div>
+
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 data-translate="feature4_title">دعم وظيفي</h3>
+                        <p data-translate="feature4_desc">خدمات التوجيه الوظيفي ومساعدتك في الحصول على فرص عمل</p>
+                    </div>
+
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-translate="feature5_title">مرونة في التعلم</h3>
+                        <p data-translate="feature5_desc">تعلم في أي وقت ومن أي مكان حسب جدولك الخاص</p>
+                    </div>
+
+                    <div class="feature-box" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 data-translate="feature6_title">مجتمع تفاعلي</h3>
+                        <p data-translate="feature6_desc">انضم إلى مجتمع من المتعلمين وتبادل الخبرات والمعرفة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- small section -->
+        <section class="counters-section">
+            <div class="container">
+                <div class="counters-grid">
+                    <div class="counter-item">
+                        <span class="counter" data-target="1500">0</span>
+                        <p data-translate="students">طالب مسجل</p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter" data-target="200">0</span>
+                        <p data-translate="rate">تقييم</p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter" data-target="2000">0</span>
+                        <p data-translate="graduate">خريج</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-translate="courses_title">اكتشف <span class="highlight"
+                            data-translate="our_courses">كورساتنا</span></h2>
+                    <p data-translate="courses_subtitle">اختر من بين مجموعة واسعة من الكورسات المصممة لمساعدتك في تحقيق
+                        أهدافك</p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Course 1 -->
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/Images/Frontend.png" alt="Frontend Course">
+                        <div class="course-info">
+                            <h3 data-translate="course1_title">تطوير واجهات الويب (Frontend)</h3>
+                            <p data-translate="course1_desc">تعلم HTML, CSS, JavaScript و React لبناء مواقع ويب تفاعلية
+                            </p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="999">999</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="1499">1499</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="1" data-name="تطوير واجهات الويب" data-price="999" name="add_to_cart">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="course-card" data-discount="25%" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/Images/Backend.png" alt="Backend Course">
+                        <div class="course-info">
+                            <h3 data-translate="course2_title">تطوير الواجهات الخلفية (Backend)</h3>
+                            <p data-translate="course2_desc">تعلم Node.js, Express, MongoDB لبناء تطبيقات ويب كاملة</p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="1199">1199</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="1799">1799</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="2" data-name="تطوير الواجهات الخلفية"
+                                    data-price="1199">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/Images/Graphic.jpg" alt="Design Course">
+                        <div class="course-info">
+                            <h3 data-translate="course3_title">تصميم الجرافيك</h3>
+                            <p data-translate="course3_desc">إتقان أدوات التصميم مثل Photoshop و Illustrator</p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="799">799</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="1299">1299</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="3" data-name="تصميم الجرافيك" data-price="799">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="./assets/Images/Frontend.png" alt="Mobile Course">
+                        <div class="course-info">
+                            <h3 data-translate="course4_title">تطوير تطبيقات الموبايل</h3>
+                            <p data-translate="course4_desc">تعلم Flutter لبناء تطبيقات Android و iOS ونشرها والربح منها
+                            </p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="1499">1499</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="1999">1999</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="4" data-name="تطوير تطبيقات الموبايل"
+                                    data-price="1499">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                        <img src="./assets/Images/Graphic.jpg" alt="AI Course">
+                        <div class="course-info">
+                            <h3 data-translate="course5_title">الذكاء الاصطناعي</h3>
+                            <p data-translate="course5_desc">أساسيات الذكاء الاصطناعي وتعلم الآلة باستخدام Python</p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="1699">1699</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="2299">2299</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="5" data-name="الذكاء الاصطناعي" data-price="1699">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                        <img src="./assets/Images/Backend.png" alt="Marketing Course">
+                        <div class="course-info">
+                            <h3 data-translate="course6_title">التسويق الرقمي</h3>
+                            <p data-translate="course6_desc">تعلم استراتيجيات التسويق عبر وسائل التواصل الاجتماعي</p>
+                            <div class="course-meta">
+                                <div class="course-price">
+                                    <span data-price="899">899</span> <span data-translate="currency">ج.م</span>
+                                    <span class="original-price"><span data-price="1399">1399</span> <span
+                                            data-translate="currency">ج.م</span></span>
+                                </div>
+                                <button class="add-to-cart" name="add_to_cart" data-id="6" data-name="التسويق الرقمي" data-price="899">
+                                    <i class="fas fa-cart-plus"></i> <span data-translate="add_to_cart">أضف للسلة</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                        <h4 data-translate="follow_us">تابعنا على</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                        <h4 data-translate="payment_methods">وسائل الدفع المتاحة</h4>
+                        <div class="payment-methods">
+                            <div class="payment-icon">
+                                <img src="./assets/Images/Visa_Inc._logo.svg.webp"
+                                    alt="VISA">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="./assets/Images/Mastercard-logo.svg.png"
+                                    alt="Mastercard">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="./assets/Images/PayPal.svg.webp"
+                                    alt="PayPal">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="./assets/Images/images.png"
+                                    alt="Apple Pay">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                        <h4 data-translate="courses_list">الكورسات</h4>
+                        <ul>
+                            <li><a href="#" data-translate="web_dev">تطوير الويب</a></li>
+                            <li><a href="#" data-translate="mobile_dev">برمجة الموبايل</a></li>
+                            <li><a href="#" data-translate="data_science">علم البيانات</a></li>
+                            <li><a href="#" data-translate="graphic_design">التصميم الجرافيكي</a></li>
+                            <li><a href="#" data-translate="digital_marketing">التسويق الرقمي</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                        <h4 data-translate="important_links">روابط مهمة</h4>
+                        <ul>
+                            <li><a href="#" data-translate="about">عن المنصة</a></li>
+                            <li><a href="#" data-translate="faq">الأسئلة الشائعة</a></li>
+                            <li><a href="#" data-translate="privacy">سياسة الخصوصية</a></li>
+                            <li><a href="#" data-translate="terms">شروط الاستخدام</a></li>
+                            <li><a href="#" data-translate="contact_us">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright" data-aos="fade-up" data-aos-delay="1">
+                    <p data-translate="copyright">
+
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
