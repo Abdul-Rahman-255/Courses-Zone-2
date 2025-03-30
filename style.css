@@ -280,6 +280,7 @@ body.dark-mode .hamburger-menu .bar {
     top: 100%;
     right: 0;
     width: 350px;
+    color: var(--text-dark);
     background-color: var(--light-card);
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -292,6 +293,7 @@ body.dark-mode .hamburger-menu .bar {
 }
 
 body.dark-mode .cart-dropdown {
+    color: var(--text-light);
     background-color: var(--dark-card);
 }
 
@@ -448,7 +450,8 @@ body.dark-mode .hero-text p {
     border: 2px solid var(--main-color);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.checkout-btn:hover {
     background-color: var(--main-dark);
     border-color: var(--main-dark);
     transform: translateY(-3px);
@@ -751,7 +754,7 @@ body.dark-mode .cart-total {
 
 .checkout-btn {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.75rem;
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -760,12 +763,6 @@ body.dark-mode .cart-total {
     cursor: pointer;
     transition: var(--transition);
     margin-top: 1rem;
-}
-
-.checkout-btn:hover {
-    background-color: var(--main-alt);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
 }
 
 /* Footer */
@@ -1031,14 +1028,15 @@ body.dark-mode .cart-total {
 
 .counter-item .counter {
     color: var(--main-color);
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     font-weight: 600;
     display: block;
 }
 
 .counter-item p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: var(--main-color);
+    font-weight: bold;
 }
 
 body.dark-mode .counters-section {
@@ -1046,8 +1044,16 @@ body.dark-mode .counters-section {
 }
 
 body.dark-mode .counter-item {
-    background-color: var(--dark-card);
+    background-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
+}
+
+body.dark-mode .counter-item .counter {
+    color: var(--text-light);
+}
+
+body.dark-mode .counter-item {
+    border: 1px solid var(--dark-card);
 }
 
 @media (max-width: 768px) {
